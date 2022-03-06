@@ -1,51 +1,69 @@
-<!DOCTYPE html>
 <html>
 
 <head>
-    <title>School Website</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!--Assuming "Menu with Marquee" and "Contact Us" has been completed in Project 68 -->
-    <!--Assuming "Campus Life" and "Achievements" has been completed in Project 69-->
-    <div class="container">
-        <!--What's New-->
-        <div class="page-header col-lg-12 col-md-12 col-sm-12 col-xs-12" id="new">
-            <h2 class="text-capitalize ">What's New</h2>
+   
+
+    <ul class="menu">
+        <li class="link"><a href="#bio">About</a></li>
+        <li class="link"><a href="#References">My favorite books</a></li>
+        <li class="link"><a href="#Mywork">My work</a></li>
+        <li class="link"><a href="#MyInspiration">My work</a>Inspiration</li>
+        <li class="link">Contact</li>
+    </ul>
+    <section id="welcome">
+        <img src="kid.jpg">
+        <h1>My Favorite hobby is <br><span id="myname">Reading books</span></h1>
+        <h2>I love reading books</h2>
+    </section>
+    <section id="bio">
+        <h1>About</h1>
+        <div class="line"></div>
+        <p class="para">My hobby is reading interesting and knowledgeable books in my free time. Whenever I go to home from my school I like to read such books after completing my home work. I am 12 years old and read in class 7th standard. Now I know very well that reading is very good habit which can make me a complete. This hobby can be developed by anyone however I got this naturally. Reading books keep one always happy and busy. It is the good source of enjoyment, knowledge, inspiration and instruction. It makes us disciplined, loyal, punctual and most importantly a successful person in the life.
+        </p>
+    </section>
+    <section id="References">
+        <h1>Here is my Favourite book and reviews on it</h1>
+        <div class="line"></div>
+        <iframe width="700" height="700" src="https://freelymagazine.com/2018/02/14/book-review-i-am-mahala/#:~:text=%E2%80%9CEducation%20is%20education.&text=The%20near%2Dfatal%20attack%20gave,Prize%20winner%20of%20all%20times"></iframe>
+        <div class="jj">
+            <a href="https://en.wikipedia.org/wiki/Harry_Potter" target="_blank">Click here to view my favorite book of all time </a>
+        </div>
+    </section>
+    <section id="Mywork">
+        <h1>I also love writing short passages</h1>
+        <div class="line"></div>
+        <button class='button'><a href="story.html">Click here to view my story</a></button>
+    </section>
+    <section id="MyInspiration" class='inspiration'>
+        <h1>My Inspiration</h1>
+
+        <div class="line"></div>
+        <div id="myname">
+            click on the pictures to view my Inspiration</div>
+
+        <div>
+
+            <span>
+                <!--  Add the link, "https://www.jkrowling.com/" to the anchor tag below -->
+                <a href="https://www.jkrowling.com/" target="_blank">
+                    <img id="picture" src="jkrowling.jpg">
+                </a>
+            </span>
+
+            <span>
+
+                <a href="https://en.wikipedia.org/wiki/Arundhati_Roy" target="_blank">
+                    <img id="picture" src="arundhati.jpg">
+                </a>
+            </span>
         </div>
 
-        <ul class="list-group">
-            <li class="list-group-item-success  col-lg-12 col-md-12 col-sm-12 col-xs-12 environment_li ">
-                <h4>New School Canteen</h4>
-                <img src="https://live.staticflickr.com/2110/2196260331_c6592e8dab_c.jpg" class="img-responsive col-lg-5 col-md-5 col-sm-5 col-xs-12">
-                <!--Add bootstrap class  col-lg-7 col-md-7 col-sm-7 col-xs-12-->
-                <p class="list-group-item-text col-lg-7 col-md-7 col-sm-7 col-xs-12">The food options and responsibilities to consider, canteens must be better organised and more efficient than they have been in the past. Online menus with photographs of the meals prepared, and detailed descriptions of their ingredients help both students and parents make the right nutritional choices. Each student or staff member who accesses the canteen could be provided with a School Canteen Account on the school website that keeps track of their previous meal choices and any dietary requirements they may have. Ordering online by ticking a box and paying for meals online can eliminate all the fuss of money handling, making it safer and less complicated for staff and students alike. Here again, diversity is the key.</p>
-            </li>
-<!-- Add bootstrap class list-group-item-warning for red color BG-->
-            <li class="list-group-item-warning  col-lg-12 col-md-12 col-sm-12 col-xs-12 environment_li">
-                <h4>Implemented Online Attendance Management System</h4>
-                 <!--Add bootstrap class  col-lg-5 col-md-5 col-sm-5 col-xs-12-->
-                <img src="https://5.imimg.com/data5/ZA/SJ/QC/SELLER-7950336/rfid-smart-attendance-for-school-500x500.jpg" class="img-responsive col-lg-5 col-md-5 col-sm-5 col-xs-12">
-                <p class="list-group-item-text col-lg-7 col-md-7 col-sm-7 col-xs-12"><b>1. Accuracy</b>
-                    Humans are prone to error, even if we provide them with supporting computational devices. Automated attendance management systems ensure accurate time records and minimize the inevitable and costly errors with manual data entry. This accurate data thereby helps to provide accurate performance and payroll data.
-                    <br>
-                    <b>2. Economics</b>
-                    Have you ever thought that attendance management systems could control costs? It saves money by putting an end to inaccurate time reporting, buddy punching, absenteeism, tardiness, time abuse, and overpayment. As a matter of fact, a study done by the Axsium Group found that large organizations save up to $1,600 per employee after implementing automated attendance management systems.
-                    <br>
-                   <b> 3. Productivity / Efficiency</b>
-                    Monitoring and managing attendance manually can be a time-consuming, laborious, and expensive affair. It takes time to process paper sheets and time cards, create schedules, authorize leave and overtime, and create payroll manually. Free up precious administration time with an automated system that does it all for you, from keeping track of employee hours to automatically importing information into your payroll system. The time and effort saved combined with data accuracy helps in optimizing the use of resources which lead to increased productivity and improves profits. And many more like Visibility / Insights, Hassle Free Workflow Management, Flexibility, Integration / Configuration, Real-time tracking, Security, and Compliance
-                </p>
-            </li>
-        </ul>
-    </div>
-    <div id="footer"></div>
-</body>
+    </section>
 
-</html>
+</body></html>
